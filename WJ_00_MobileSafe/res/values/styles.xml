@@ -1,0 +1,86 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/next"
+            android:layout_marginBottom="5dp"
+    -->
+    <style name="Button_next_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:onClick">next</item>
+    </style>
+    <!--
+          android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button"
+            android:drawableLeft="@drawable/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一页"
+            android:onClick="pre"
+    -->
+    <style name="Button_pre_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+        <item name="android:text">上一页</item>
+        <item name="android:onClick">pre</item>
+    </style>
+
+    <!-- 自定义样式 -->
+    <!--
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="sim卡变更报警"    -->
+    <style name="text_content_style">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

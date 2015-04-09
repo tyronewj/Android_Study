@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.wj.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.wj.mobilesafe.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.wj.mobilesafe.HomeActivity"/>
+        <activity android:name="cn.wj.mobilesafe.SettingActivity"/>
+        <activity android:name="cn.wj.mobilesafe.LostFindActivity"/>
+        <activity android:name="cn.wj.mobilesafe.Setup1Activity"/>
+        <activity android:name="cn.wj.mobilesafe.Setup2Activity"/>
+        <activity android:name="cn.wj.mobilesafe.Setup3Activity"/>
+        <activity android:name="cn.wj.mobilesafe.Setup4Activity"/>
+        <activity android:name="cn.wj.mobilesafe.SelectContactActivity"/>
+        <receiver android:name="cn.wj.mobilesafe.reciver.BootCompleteReciver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category  android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>
